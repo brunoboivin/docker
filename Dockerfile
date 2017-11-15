@@ -77,7 +77,7 @@ WORKDIR /usr/local/src
 # Install CellProfiler
 RUN git clone https://github.com/CellProfiler/CellProfiler.git
 WORKDIR /usr/local/src/CellProfiler
-ARG VERSION=tags/v3.0.0
+ARG VERSION=tags/2.2.0
 RUN git checkout $VERSION
 RUN pip install --editable .
 
